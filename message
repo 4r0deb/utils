@@ -1,0 +1,20 @@
+#!/bin/bash
+
+mess (){
+clear
+echo "La ora 21:30 se inchide sedinta!" | aosd_cat -R white -x 430 -y -550 -u 1000 -n "Arial Black 50" -e 12
+clear
+echo "Respectati regulile!" | aosd_cat -R white -x 430 -y -550 -u 1000 -n "Arial Black 50" -e 12
+echo "Nu intrerupeti vorbitorii!" | aosd_cat -R white -x 430 -y -550 -u 1000 -n "Arial Black 50" -e 12
+echo "Respectati timpul alocat!" | aosd_cat -R white -x 430 -y -550 -u 1000 -n "Arial Black 50" -e 12
+echo "Respectati deciziile moderatorului!" | aosd_cat -R white -x 430 -y -550 -u 1000 -n "Arial Black 50" -e 12
+}
+
+
+
+ while true;
+ do 
+ #echo 'Hit CTRL+C'; 
+ mess
+ 
+ sleep 1; done

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KILL_C
+Comment=KILL_CRONOS
+Exec=pkill -f cronos
+Icon=
+Path=
+Terminal=false
+StartupNotify=false

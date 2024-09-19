@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+ function alarm(){
+U=1
+ARIAL="Arial Black 350"
+nohup play --no-show-progress -r 2200 -n synth .45 triangle 1000-300 repeat 3 &>/dev/null &
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo -e "Liniște vă rog!" | aosd_cat -R red -x 400 -y -300 -u  1600 -n "rial Black 100" -a 7 -e 12
+}
+alarm

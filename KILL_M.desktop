@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KILL_M
+Comment=KILL_MESSAGE
+Exec=pkill -f message
+Icon=
+Path=
+Terminal=false
+StartupNotify=false

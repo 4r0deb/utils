@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ST_M
+Comment=START_MESSAGE
+Exec=message
+Icon=
+Path=
+Terminal=false
+StartupNotify=false

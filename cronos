@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+clear
+ARIAL="Arial Black 350"
+ sec=$1
+# sec2=$2
+
+#ALOCAT=`echo -e "Depasiti timpul alocat!" | aosd_cat -R red -x 200 -y -350 -n "Arial Black 50"`
+function trecut(){
+for count in {1..1000}; do
+    clear
+#echo "Depasiti timpul alocat!" | aosd_cat -R green -x 200 -y -350 -u 1600 &
+    
+    echo -ne "${count}\r" | aosd_cat -R red -x 130 -y -10 -u 1 -n "Arial Black 100"
+    sleep 1
+done
+}
+ 
+ function alarm(){
+U=1
+nohup play --no-show-progress -r 2200 -n synth .45 triangle 1000-300 repeat 3 &>/dev/null &
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
+echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
+echo -e "Depasiti timpul alocat!" | aosd_cat -R red -x 200 -y -350 -u  1600 -n "Arial Black 50" -a 7 
+}
+
+while [ $sec -ge 0 ]; do
+
+        echo -ne "$sec\r" | aosd_cat -R green -x 130 -y -10 -u 1 -n "Arial Black 100"
+        let "sec=sec-1"
+#	trecut
+        sleep 1
+done
+
+
+alarm
+trecut                        
