@@ -16,6 +16,6 @@ echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
 echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
 echo ☢ | aosd_cat -R red -x 830 -y -350 -u $U -n "$ARIAL"
 echo ☢ | aosd_cat -R yellow -x 830 -y -350 -u $U -n "$ARIAL"
-echo -e "Liniște vă rog!" | aosd_cat -R red -x 400 -y -300 -u  1600 -n "rial Black 100" -a 7 -e 12
+echo -e "Your message" | aosd_cat -R red -x 400 -y -300 -u  1600 -n "Arial Black 100" -a 7 -e 12
 }
 alarm
