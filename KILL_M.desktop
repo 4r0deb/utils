@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=KILL_M
-Comment=KILL_MESSAGE
+Comment=KILL_MESSAGE_
 Exec=pkill -f message
 Icon=
 Path=
